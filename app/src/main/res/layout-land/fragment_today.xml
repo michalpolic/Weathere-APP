@@ -1,0 +1,206 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.michalpolic.weather.android.fragment.TodayFragment">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/san_francisco"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/home_space"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.62" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <LinearLayout
+                android:id="@+id/gradient_background"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/vertical_gradient"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:id="@+id/home_space1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"></TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingTop="40dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/city_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="@string/home_city"
+                                android:textColor="#ffff"
+                                android:textSize="25sp" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/icon_home"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_launcher" />
+
+                                <TextView
+                                    android:id="@+id/description_home"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="sans-serif-light"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/home_weather_description"
+                                    android:textColor="#ffff"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/temperature_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="top"
+                        android:text="@string/home_degree"
+                        android:textColor="#ffff"
+                        android:textSize="70sp"
+                        android:typeface="normal" />
+                </TableRow>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/humidity_home"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:drawableLeft="@drawable/ic_action_ic_weather_humidity"
+                            android:drawablePadding="7dp"
+                            android:singleLine="true"
+                            android:text="@string/home_humidity"
+                            android:textSize="15sp"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/precipitation_home"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_column="1"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_action_ic_weather_precipitation"
+                            android:drawablePadding="7dp"
+                            android:singleLine="true"
+                            android:text="@string/home_precipitation"
+                            android:textSize="15sp"
+                            android:gravity="left|center_vertical" />
+
+                        <TextView
+                            android:id="@+id/pressure_home"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_column="2"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_action_ic_weather_pressure"
+                            android:drawablePadding="7dp"
+                            android:singleLine="true"
+                            android:text="@string/home_pressure"
+                            android:textSize="15sp"
+                            android:gravity="left|center_vertical" />
+
+                        <TextView
+                            android:id="@+id/wind_home"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/humidity_home"
+                            android:layout_gravity="left"
+                            android:drawableLeft="@drawable/ic_action_ic_weather_wind"
+                            android:drawablePadding="7dp"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/home_wind"
+                            android:textSize="15sp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/direction_home"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:drawableLeft="@drawable/ic_action_ic_weather_direction"
+                            android:drawablePadding="7dp"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/home_direction"
+                            android:textSize="15sp"
+                            android:layout_weight="1" />
+                    </TableRow>
+
+                </LinearLayout>
+        </TableRow>
+    </LinearLayout>
+</FrameLayout>

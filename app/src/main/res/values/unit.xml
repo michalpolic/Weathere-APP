@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="length_unit">
+        <item>@string/meter</item>
+        <item>@string/miles</item>
+    </string-array>
+
+    <string-array name="temperature_unit">
+        <item>@string/celsius</item>
+        <item>@string/kelvin</item>
+        <item>@string/fahrenheit</item>
+    </string-array>
+
+</resources>

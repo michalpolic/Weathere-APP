@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/ic_action_image_wb_sunny</item>
+        <item>@drawable/ic_action_action_today</item>
+    </array>
+    <array name="names">
+        <item>Today</item>
+        <item>Forecast</item>
+    </array>
+</resources>

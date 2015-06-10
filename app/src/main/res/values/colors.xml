@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navigation_background_selected">#ffededed</color>
+    <color name="navigation_background">#ffffffff</color>
+    <color name="actionbar_title">#fff</color>
+    <color name="action_bar">#ff2196f3</color>
+    <color name="forecast_title">#ff212121</color>
+    <color name="forecast_temperature">#ff676767</color>
+</resources>

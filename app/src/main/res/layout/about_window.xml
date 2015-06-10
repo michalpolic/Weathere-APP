@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/action_about"
+        android:id="@+id/about_title"
+        android:textStyle="bold"
+        android:paddingLeft="10dp" />
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/about_credits"
+        android:id="@+id/textView4"
+        android:minLines="4"
+        android:layout_marginTop="13dp"
+        android:textSize="17sp"
+        android:textColor="#ffa0a0a0"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/ok_button"
+        android:gravity="right"
+        android:textColor="#2196F3"
+        android:textStyle="bold" />
+
+</LinearLayout>
